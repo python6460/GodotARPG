@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="GodotARPG"
+run/main_scene="res://Scene/world.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=240
+window/size/viewport_height=135
+window/size/window_width_override=960
+window/size/window_height_override=540
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
@@ -20,4 +29,5 @@ project/assembly_name="GodotARPG"
 
 [rendering]
 
-renderer/rendering_method="mobile"
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://txg6lf7128vp"]
+
+[ext_resource type="Texture2D" uid="uid://d0pok77do810r" path="res://Art/NinjaAdventure/Actor/Characters/BlackNinjaMage/SeparateAnim/Idle.png" id="1_38tuu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8kkci"]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_38tuu")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_8kkci")
